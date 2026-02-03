@@ -129,7 +129,11 @@ The transpiler is designed to support the following subset of SQL:
 ---
 
 ## How to Run
-
+Before cloning create venv environment and enter in it.as,
+```
+python3 -m install venv
+source venv/bin/activate
+```
 1. **Clone the repository:**
 ```bash
 git clone "https://github.com/niharika150107/sql-to-mongodb-transpiler.git"
@@ -138,8 +142,9 @@ cd sql-to-mongodb-transpiler
 ```
 ```
 pip install -r requirements.txt
+pip install ply
 ```
  To test the lexer implementated until now,in the sql-to-mongodb-transpiler folder
 ```
-python test_lexer.py
+python3 -m tests.test_lexer
 ```
